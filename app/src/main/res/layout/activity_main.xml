@@ -11,12 +11,15 @@
     tools:context="com.example.benhursouza.jenkinstest.MainActivity">
 
     <TextView
+        android:id="@+id/txt_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tstando Lint! vamos testar" />
 
-    <TextView
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tstando Lint! vamos novo teste" />
+        android:layout_centerInParent="true"
+        android:id="@+id/btn"/>
 </RelativeLayout>
