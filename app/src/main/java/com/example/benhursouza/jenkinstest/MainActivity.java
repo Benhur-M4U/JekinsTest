@@ -5,13 +5,15 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int a;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        soma(2,3);
-        diminuir(2,4);
+        soma(a,3);
+        somar2numeros(2,4);
     }
 
 
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         return a + b;
     }
 
-    private int diminuir(int a, int b){
+    private int somar2numeros(int a, int b){
         return a + b;
     }
 
