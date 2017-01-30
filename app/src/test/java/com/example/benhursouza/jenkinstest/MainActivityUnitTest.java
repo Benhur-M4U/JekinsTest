@@ -26,8 +26,10 @@ public class MainActivityUnitTest {
 
     @Test
     public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 1);
+        assertEquals(4, 2 + 2);
     }
+
+
 
 //    @Before
 //    public void setUp() {
