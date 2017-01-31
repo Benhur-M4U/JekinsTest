@@ -2,6 +2,7 @@ package com.example.benhursouza.jenkinstest;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -34,7 +35,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        somar2numeros(2,4);
+        Log.i("teste", somar2numeros(2,4));
     }
 
 
@@ -43,8 +44,8 @@ public class MainActivity extends Activity {
         return String.valueOf(a + b);
     }
 
-    public int somar2numeros(int a, int b){
-        return a + b;
+    public String somar2numeros(int a, int b){
+        return  String.valueOf(a + b);
     }
 
 
