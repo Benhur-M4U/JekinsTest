@@ -1,12 +1,13 @@
 package com.example.benhursouza.jenkinstest;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 import com.crashlytics.android.Crashlytics;
+
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends Activity {
@@ -29,7 +30,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 //                txt.setText(result.toString());
                 result = soma(2,3);
-                txt.setText(result.toString());
+                txt.setText(result);
             }
         });
 
@@ -39,7 +40,7 @@ public class MainActivity extends Activity {
 
     //Test
     private String soma(int a, int b) {
-        return String.valueOf(a - b);
+        return String.valueOf(a + b);
     }
 
     public int somar2numeros(int a, int b){

@@ -1,14 +1,6 @@
 package com.example.benhursouza.jenkinstest;
 
-import android.widget.Button;
-import android.widget.TextView;
-
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.robolectric.Robolectric;
-import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -25,7 +17,7 @@ public class MainActivityUnitTest {
 //    private Button button;
 
     @Test
-    public void addition_isCorrect() throws Exception {
+    public void additionIsCorrect() throws Exception {
         assertEquals(4, 2 + 2);
     }
 
