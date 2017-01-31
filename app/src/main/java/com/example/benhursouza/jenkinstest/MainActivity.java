@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 
     //Test
     private String soma(int a, int b) {
-        return String.valueOf(a + b);
+        return String.valueOf(a - b);
     }
 
     public int somar2numeros(int a, int b){
