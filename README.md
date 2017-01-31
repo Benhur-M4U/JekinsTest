@@ -1,0 +1,2 @@
+# JekinsTest
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fe41dc5629ad4ec7912131be7d49a0f1)](https://www.codacy.com/app/Benhur-M4U/JekinsTest?utm_source=github.com&utm_medium=referral&utm_content=Benhur-M4U/JekinsTest&utm_campaign=badger)
