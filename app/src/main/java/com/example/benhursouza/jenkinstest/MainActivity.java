@@ -11,7 +11,7 @@ import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends Activity {
 
-    private int a;
+//    private int a;
     public String result;
 
     @Override
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 
     //Test
     private String soma(int a, int b) {
-        return String.valueOf(a + b);
+        return String.valueOf(a - b);
     }
 
     public int somar2numeros(int a, int b){

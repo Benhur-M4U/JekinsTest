@@ -26,7 +26,7 @@ import static org.junit.Assert.assertTrue;
  */
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
-    private String mStringToBetyped;
+//    private String mStringToBetyped;
 
     @Rule
     public ActivityTestRule<MainActivity> menuActivityTestRule = new ActivityTestRule<>(MainActivity.class);
@@ -39,11 +39,11 @@ public class MainActivityTest {
     }
 
 
-    @Before
-    public void initValidString() {
+//    @Before
+//    public void initValidString() {
         // Specify a valid string.
-        mStringToBetyped = "5";
-    }
+//        mStringToBetyped = "5";
+//    }
 
     @Test
     public void changeTextSameActivity() {
