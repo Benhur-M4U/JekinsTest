@@ -26,6 +26,10 @@ import static org.junit.Assert.assertTrue;
  */
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
+    private String mStringToBetyped;
+
+    @Rule
+    public ActivityTestRule<MainActivity> menuActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
     public void useAppContext() throws Exception {
@@ -35,12 +39,6 @@ public class MainActivityTest {
     }
 
 
-    private String mStringToBetyped;
-
-    @Rule
-    public ActivityTestRule<MainActivity> menuActivityTestRule = new ActivityTestRule<>(MainActivity.class);
-
-
     @Before
     public void initValidString() {
         // Specify a valid string.
@@ -48,7 +46,7 @@ public class MainActivityTest {
     }
 
     @Test
-    public void changeText_sameActivity() {
+    public void changeTextSameActivity() {
         // Type text and then press the button.
 //        onView(withId(R.id.t))
 //                .perform(typeText(mStringToBetyped), closeSoftKeyboard());
