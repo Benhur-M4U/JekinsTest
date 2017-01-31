@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends Activity {
 
@@ -15,6 +17,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
 
         final TextView txt = (TextView)findViewById(R.id.txt_nome);
@@ -35,7 +38,7 @@ public class MainActivity extends Activity {
 
 
     private String soma(int a, int b) {
-        return String.valueOf(a - b);
+        return String.valueOf(a + b);
     }
 
     public int somar2numeros(int a, int b){
