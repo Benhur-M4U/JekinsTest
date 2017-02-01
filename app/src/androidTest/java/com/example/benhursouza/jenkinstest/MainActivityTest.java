@@ -13,6 +13,8 @@ import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
@@ -46,8 +48,11 @@ public class MainActivityTest {
     @Test
     public void changeTextSameActivity() {
         // Type text and then press the button.
-//        onView(withId(R.id.t))
-//                .perform(typeText(mStringToBetyped), closeSoftKeyboard());
+        onView(withId(R.id.edt1))
+                .perform(typeText("b@b.com"), closeSoftKeyboard());
+        onView(withId(R.id.edt2))
+                .perform(typeText("1234567"), closeSoftKeyboard());
+
         onView(withId(R.id.btn)).perform(click());
 
         // Check that the text was changed.
