@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "829713372947",
+    "project_id": "firebase-jenkinstest"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829713372947:android:b49cce6244f90ef5",
+        "android_client_info": {
+          "package_name": "com.example.benhursouza.jenkinstest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQIl3Z7cmCiqYNevQMELzE9RU4kjlh0FQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-91293297-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

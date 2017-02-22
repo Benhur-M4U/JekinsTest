@@ -20,6 +20,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 /**
  * Created by benhur.souza on 27/01/2017.
@@ -56,11 +57,13 @@ public class MainActivityTest {
         onView(withId(R.id.btn)).perform(click());
 
         // Check that the text was changed.
+        Assert.fail("Deu erro aqui");
         onView(withId(R.id.txt_nome))
                 .check(matches(withText("5")));
 
-        Assert.assertEquals(4, 2 + 2);
-    }
+
+//        Assert.assertEquals(4, 2 + 1);
+}
 
 
 }
